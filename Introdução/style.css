@@ -16,21 +16,17 @@
 
 html{
     background-color: var(--color-white);
-
 }
 
 body{
     overflow-x: hidden;
     min-height: 100vh;
     max-width: 450px;
-    
 }
-
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 nav{
     display: flex;
@@ -42,12 +38,21 @@ nav{
     left: 1px;
     margin-bottom:2%;
 }
-
+h1{
+    font-size: 26px;
+}
+h2{
+    font-size: 24px;
+}
+p{
+    font-size: 18px;
+}
 .headerTitle{
     background-color: var(--color-yellow);
     border-radius: 0 0 25px 25px ;
     margin: 0 2% 2% 2%;
     text-align: center;
+    min-width: 300;
 }
 .headerTitle h1 {
     color: var(--color-white);
@@ -59,6 +64,7 @@ nav{
 }
 .headerImage {
     max-width: 400px;
+    max-height: 400px;
     width: 100%;
 }
 /*MENU BUTTON*/
@@ -76,7 +82,7 @@ nav{
     border: 3px solid var(--color-lightBlue);
     background-color: var(--color-lightBlue);
 }
-.navButton h6{
+.navButton h5{
     color: var(--color-white);
     position: absolute;
     top: 2px;
@@ -136,11 +142,15 @@ nav{
     border-radius: 20px;
     color: var(--color-white);
     font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+.navButtonClick button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
 }
 /*MENU BUTTON*/
 .section01 p{
     color:var(--color-font);
-    font-size: 18px;
     text-align: justify;
     padding: 0.3rem 5%;
 }
@@ -151,7 +161,16 @@ nav{
     flex-direction: column;
     align-items: center;
 }
+.imageAndTitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 .mainVideoWelcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--color-yellow);
     border-radius: 0 0 25px 25px ;
     margin: 0 2% 2% 2%;
@@ -165,7 +184,6 @@ nav{
 .mainVideoWelcome p{
     color:var(--color-font);
     padding: 0% 5% 5% 5%;
-    font-size: 18px;
 }
 .section02 iframe{
     border-radius: 15px;
@@ -177,6 +195,9 @@ nav{
     align-items: center;
     justify-content: center;
 }
+.subTitle {
+    text-align: center;
+}
 .section03 h2{
     color: var(--color-blue);
     padding: 5% 5% 1% 5%;
@@ -184,15 +205,7 @@ nav{
 .section03 p{
     color:var(--color-font);
     padding: 0% 5% 5% 5%;
-    font-size: 18px;
     text-align: justify;
-}
-.section03 h6{
-    color:var(--color-font);
-    padding: 2% 5% 5% 5%;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 100;
 }
 .timeCourse{
     display: flex;
@@ -220,12 +233,10 @@ nav{
 .contentTable{
     display: flex;
     justify-content: center;
-    padding-left: 0%;
-    padding-bottom: 2%;
+    margin: 2% 2%;
 }
 table{
-    margin-top: 15px;
-    margin-bottom: 5%;
+    margin: 5%;
     border: solid black 0.15rem;
     text-align: center;
     overflow:hidden;
@@ -297,7 +308,6 @@ table{
 .section04 p{
     color:var(--color-font);
     padding: 0% 5% 5% 5%;
-    font-size: 18px;
     text-align: center;
 }
 .characters{
@@ -319,14 +329,30 @@ table{
     color: var(--color-white);
     text-align: justify;
 }
+.blockLeft{
+    display: flex;
+    justify-content: center;
+}
 .folleto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: var(--color-yellow);
     border-radius: 35px 35px 0px 0px ;
     margin: 0 2% 0% 2%;
     text-align: center;
     width: 80%;
 }
-.folleto button{
+.folletoButtonAndImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.folletoButtonAndImg img{
+    display: none;
+}
+.folletoButtonAndImg button{
     width: 220px;
     height: 50px;
     cursor: pointer;
@@ -337,6 +363,11 @@ table{
     color: var(--color-white);
     font-weight: 700;
     font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.folletoButtonAndImg button:hover{
+    background-color: var(--color-white);
+    color: var(--color-blue);
 }
 .section05{
     display: flex;
@@ -350,7 +381,6 @@ table{
 .section05 p{
     color:var(--color-font);
     padding: 1% 5% 5% 5%;
-    font-size: 18px;
     text-align: justify;
 }
 .section05 button{
@@ -364,6 +394,11 @@ table{
     color: var(--color-white);
     font-weight: 700;
     font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.section05 button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
 }
 .foroTitleAndButton{
     display: flex;
@@ -399,6 +434,11 @@ table{
     background-color: var(--color-yellow);
     color: var(--color-blue);
     margin-top: 2%;
+    transition: all 0.2s ease-in-out;
+}
+.foroPerguntas button:hover{
+    background-color: var(--color-white);
+    color: var(--color-blue);
 }
 .foroPerguntas p{
     text-align: center;
@@ -412,7 +452,6 @@ footer {
 footer p{
     padding: 2% 5%;
     text-align: justify;
-    font-size: 18px;
     color: var(--color-font);
 }
 footer li{
@@ -435,7 +474,6 @@ footer li{
 .titleFooter p{
     color:var(--color-font);
     padding: 1% 5% 5% 5%;
-    font-size: 18px;
     text-align: center;
 }
 .finalDiv{
@@ -448,4 +486,152 @@ footer li{
     color: var(--color-white);
     padding: 5%;
     text-align: center;
+}
+#imageBar{
+    width: 100%;
+}
+@media screen and (min-width: 451px) {
+    body{
+        max-width: 600px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    h6{
+        font-size: 22px;
+    }
+    p{
+        font-size: 22px;
+    }
+    .section02 img {
+        width: 100%;
+    }
+    #imageBar{
+        width: 100%;
+    }
+
+}
+@media screen and (min-width: 601px){
+    body{
+        min-width: 900px;
+    }
+    header{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h6{
+        font-size: 24px;
+    }
+    p{
+        font-size: 24px;
+    }
+    
+    #imageBar{
+        width: 100%;
+    }
+    .headerTitle{
+        padding: 2%;
+        width: 40%;
+    }
+    .headerImage{
+        padding: 2%;
+        width: 60%;
+    }
+    .section01 p{
+        padding: 0.3rem 5% 5% 5%;
+    }
+    .section02 h2{
+        font-size: 28px;
+    }
+    .section02 p{
+        font-size: 22px;
+    }
+    .section02 iframe{
+        width: 550px;
+        height: 350px;
+    }
+    .section02 img {
+        width: 100%;
+    }
+    .timeCourse{
+        width: 80%;
+        justify-content: space-around;
+    }
+    .text{
+        padding-top: 2%;
+    }
+    .text p{
+        font-size: 22px;
+    }
+    .iconsList img{
+        margin: 2%;
+    }
+    .folleto{
+        width: 100%;
+        border-radius: 0px 220px 0px 0px;
+
+    }
+    .folletoButtonAndImg{
+        height: 150px;
+        margin-right: 25rem;
+    }
+    .folletoButtonAndImg button{
+        width: 280px;
+        height: 65px;
+        font-size: 18px;
+        margin-right: 5%;
+    }
+    .folletoButtonAndImg img{
+        display: flex;
+    }
+    .section05 button{
+        width: 280px;
+        height: 65px;
+        font-size: 18px;
+    }
+    .imgText img{
+        display: flex;
+    }
+    .foroPerguntas button{
+        width: 280px;
+        height: 65px;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 901px) {
+    body{
+        max-width: 1920px;
+    }
+    header{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .headerTitle{
+        padding: 2%;
+        width: 450px
+    }
+    .headerImage{
+        width: 100%;
+    }
+    .imageAndTitle{
+        align-items: flex-end;
+        justify-content: right;
+    }
+    .mainVideoWelcome{
+        margin: 0;
+        border-radius: 0px 0px 0px 100px;
+    }
+    #imageBar{
+        width: 108%;
+    }
 }

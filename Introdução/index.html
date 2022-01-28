@@ -17,7 +17,7 @@
     </header>
     <nav id="navLock">
         <div class="navButton" onclick="return showButtonMenu();">
-            <h6> Menu </h6>
+            <h5> Menu </h5>
             <div class="hamburguerMenu"></div>
         </div>
         <div class="navButtonClick">
@@ -41,21 +41,23 @@
             <p>Que el programa Mujeres Liderazgo te inspire a ser protagonista de tu trayectoria  personal y profesional, te conecte con la esencia del cooperativismo y genere valor a tu experiencia de aprendizaje con la Cooperativa CACMU. </p>
         </section>
         <section class="section02">
-            <img src="img/Group 669.png" alt="SeparationBar">
-            <div class="mainVideoWelcome">
-                <h2>¡Bienvenida!</h2>
-                <p>¡Reciba una bienvenida y una breve presentación del Proyecto, en palabras de la Gerente General de Cacmu, Janeth Chávez!</p>
-            </div>
+            <div class="imageAndTitle">
+                <img src="img/Group 669.png" alt="SeparationBar">
+                <div class="mainVideoWelcome">
+                    <h2>¡Bienvenida!</h2>
+                    <p>¡Reciba una bienvenida y una breve presentación del Proyecto, en palabras de la Gerente General de Cacmu, Janeth Chávez!</p>
+                </div>
+            </div>  
             <iframe width="350" height="200" src="https://www.youtube.com/embed/aV-T_aVjZsk"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
             </iframe>
         </section>
-        <img src="img/Group 669.png" alt="SeparationBar">
+        <img id="imageBar" src="img/Group 669.png" alt="SeparationBar">
         <section class="section03">
             <h2>Horario del programa</h2>
-            <h6 class="center">Conozca los módulos y plazos del programa Formación Cooperativa en Liderazgo para Mujeres</p>
+            <p class="subTitle">Conozca los módulos y plazos del programa Formación Cooperativa en Liderazgo para Mujeres</p>
             <div class="timeCourse">
                 <img src="img/CalendarIcon.png" alt="CalendarIcon">
                 <div class="text">
@@ -144,7 +146,7 @@
                 <h2>Certificado del módulo</h2>
             </div>
         </section>
-        <img src="img/Group 669.png" alt="SeparationBar">
+        <img id="imageBar" src="img/Group 669.png" alt="SeparationBar">
         <section class="section04">
             <h2>Personajes del programa</h2>
             <p>En cada uno de los módulos en que participarás encontrarás a nuestros personajes que son parte de la Escuela CACMU educa.
@@ -200,9 +202,12 @@
             <p>Conoce el Formación Cooperativa en Liderazgo para Mujeres accediendo al folleto explicativo. Comprenderás toda la trayectoria formativa, cuáles son los temas obligatorios, contenidos opcionales, conceptos y habilidades que el proyecto puede ofrecerte.</p>
             <p><strong>Acceda al folleto</strong></p>
             <div class="folleto">
-                <button>Folleto informativo</button>
+                <div class="folletoButtonAndImg">
+                    <button>Folleto informativo</button>
+                    <img src="img/EvaluacionInicial.png" alt="Icone">
+                </div>
             </div>
-            <img src="img/Group 669.png" alt="SeparationBar">
+            <img id="imageBar" src="img/Group 669.png" alt="SeparationBar">
         </section>
         <section class="section05">
             <div class="foroTitleAndButton">
@@ -227,7 +232,7 @@
         </section>
     </main>
     <footer>
-        <img src="img/Group 669.png" alt="SeparationBar">
+        <img id="imageBar" src="img/Group 669.png" alt="SeparationBar">
         <div class="titleFooter">
             <h2>Consejos e instrucciones</h2>
             <p>Cómo mejorar tus estudios en Escuela CACMU Educa </p>
@@ -243,8 +248,15 @@
         <div class="finalDiv">
             <p>¡Esperamos que tengas una gran trayectoria formativa!</p>
         </div>
-        <img src="img/Group 669.png" alt="SeparationBar">
+        <img id="imageBar" src="img/Group 669.png" alt="SeparationBar">
     </footer>
 </body>
 <script src="main.js"></script>
+<script src="https://escuela.cacmu.fin.ec/pluginfile.php/14692/course/section/1061/main.js"></script>
+<script>
+    var elem = document.createElement('link');
+    elem.rel = 'stylesheet'
+    elem.href = 'https://escuela.cacmu.fin.ec/pluginfile.php/14692/course/section/1061/style.css'; //Link do css
+    document.head.appendChild(elem);
+</script>
 </html>
