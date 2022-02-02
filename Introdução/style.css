@@ -14,38 +14,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html{
-    background-color: var(--color-white);
-}
-
-body{
-    overflow-x: hidden;
-    min-height: 100vh;
-    max-width: 450px;
-}
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-nav{
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    z-index: 1;
-    position: sticky;
-    top: 1px;
-    left: 1px;
-    margin-bottom:2%;
-}
 h1{
     font-size: 26px;
+    margin: auto;
 }
 h2{
     font-size: 24px;
+    margin: auto;
 }
 p{
     font-size: 18px;
+    margin: auto;
+}
+.divGeral{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.imgAndTextHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .headerTitle{
     background-color: var(--color-yellow);
@@ -63,11 +52,19 @@ p{
     padding: 5% 5% 0 5%;
 }
 .headerImage {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 450px;
+    max-height: 450px;
     width: 100%;
 }
 /*MENU BUTTON*/
+.navLock{
+    display: flex;
+    justify-content: right;
+    z-index: 1;
+    margin-bottom:2%;
+    top: 80px;
+    right: 65px;
+}
 .navButton{
     position: relative;
     display: flex;
@@ -128,9 +125,10 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 120px;
+    z-index: 1;
+    width: 150px;
     height: 100%;
-    border-radius:0 0 0 15px ;
+    border-radius:0 0 0 25px ;
     background-color: var(--color-lightBlue);
 }
 .navButtonClick button{
@@ -139,8 +137,9 @@ p{
     margin: 10%;
     background-color: var(--color-blue);
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     color: var(--color-white);
+    font-size: 16px;
     font-weight: 700;
     transition: all 0.2s ease-in-out;
 }
@@ -170,12 +169,11 @@ p{
 .mainVideoWelcome{
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: var(--color-yellow);
     border-radius: 0 0 25px 25px ;
     margin: 0 2% 2% 2%;
-    text-align: center;
     width: 80%;
+    text-align: center;
 }
 .mainVideoWelcome h2{
     color: var(--color-blue);
@@ -226,9 +224,10 @@ p{
 }
 .text p{
     text-align: left;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     color: var(--color-white);
+    margin: 0px;
 }
 .contentTable{
     display: flex;
@@ -287,6 +286,11 @@ table{
     background-color: #D8A314;
     color: var(--color-blue);
 }
+.iconsImageGeral{
+    display: none;
+    justify-content: center;
+    
+}
 .iconsList{
     display: flex;
     flex-direction: column;
@@ -304,6 +308,7 @@ table{
 .section04 h2{
     color: var(--color-blue);
     padding: 5% 5% 1% 5%;
+    text-align: center;
 }
 .section04 p{
     color:var(--color-font);
@@ -332,6 +337,9 @@ table{
 .blockLeft{
     display: flex;
     justify-content: center;
+    height: 400px;
+    width: 800px;
+    background-color: var(--color-yellow);
 }
 .folleto{
     display: flex;
@@ -461,6 +469,8 @@ footer li{
     color: var(--color-font);
 }
 .titleFooter{
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-yellow);
     border-radius: 0 0 25px 25px ;
     margin: 0 2% 2% 2%;
@@ -509,18 +519,11 @@ footer li{
     .section02 img {
         width: 100%;
     }
-    #imageBar{
-        width: 100%;
-    }
 
 }
 @media screen and (min-width: 601px){
     body{
         min-width: 900px;
-    }
-    header{
-        flex-direction: row;
-        align-items: flex-start;
     }
     h1{
         font-size: 32px;
@@ -534,9 +537,9 @@ footer li{
     p{
         font-size: 24px;
     }
-    
-    #imageBar{
-        width: 100%;
+    .imgAndTextHeader{
+        flex-direction: row;
+        align-items: center;
     }
     .headerTitle{
         padding: 2%;
@@ -544,7 +547,7 @@ footer li{
     }
     .headerImage{
         padding: 2%;
-        width: 60%;
+        width: 100%;
     }
     .section01 p{
         padding: 0.3rem 5% 5% 5%;
@@ -611,9 +614,9 @@ footer li{
     body{
         max-width: 1920px;
     }
-    header{
+    .imgAndTextHeader{
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
     }
     .headerTitle{
@@ -628,10 +631,118 @@ footer li{
         justify-content: right;
     }
     .mainVideoWelcome{
-        margin: 0;
-        border-radius: 0px 0px 0px 100px;
+        width: 100%;
+        border-radius: 0px 0px 0px 220px;
+        height: 150px;
     }
-    #imageBar{
-        width: 108%;
+    .mainVideoWelcome h2,p{
+        padding:1% 0%;
+    }
+    .section03 h2{
+        padding: 2% 2% 1% 2%;
+    }
+    .section03 p{
+        padding: 2%;
+    }
+    .timeCourse{
+        width: 50%;
+        align-items: center;
+        padding: 0px;
+    }
+    .contentTable{
+        margin: 0px;
+    }
+    table{
+        margin: 2%;
+    }
+    .text{
+        padding: 0px;
+    }
+    #textT{
+        text-align: center;
+    }
+    .iconsImageGeral{
+        display: flex;
+        max-height: 600px;
+        padding-bottom: 2%;
+    }
+    .iconsList{
+        display: none;
+    }
+    .section04 h2{
+        padding-top: 1%;
+    }
+    .characters{
+        width: 50%;
+        margin: 2% auto 5% auto;
+        height: 350px;
+        padding-bottom: 8%;
+    }
+    .characters p{
+        text-align: center;
+    }
+    .blockLeft{
+        justify-content: left;
+    }
+    .foroTitleAndButton{
+        flex-direction: row;
+        justify-content: center;
+        width: 1000px;
+    }
+    .foroTitle{
+        width: 600px;
+        align-items: flex-start;
+        margin-top:5% ;
+        margin-bottom: 5%;
+    }
+    .foroTitle h2{
+        text-align: left;
+        padding: 0%;
+        margin: 0%;
+    }
+    .foroTitle p{
+        text-align: left;
+        padding: 0%;
+        margin: 0%;
+    }
+    .imgText{
+        flex-direction: row;
+        width: 1000px;
+    }
+    .foroPerguntas{
+        flex-direction: row;
+        width: 70%;
+        padding: 0%;
+        height: 150px;
+        justify-content: space-around;
+    }
+    .foroPerguntas p{
+        padding-top:2% ;
+    }
+    .titleFooter{
+        width: 100%;
+        border-radius: 0px 0px 0px 220px;
+        height: 150px;
+    }
+    .titleFooter h2{
+        padding: 1% 0px 1% 0px;
+    }
+    .titleFooter p{
+        padding: 0px 0px 2% 0px;
+    }
+    .textTitleFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer p{
+        padding: 25px;
+        text-align: center;
+    }
+    footer li{
+        padding: 10px;
+    }
+    .finalDiv{
+        width: 60%;
     }
 }

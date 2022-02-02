@@ -1,0 +1,120 @@
+:root{
+    --color-yellow:#FFCE05;
+    --color-blue:#303192;
+    --color-white:#fff;
+    --color-font:#363636;
+    --color-shadow:#b6b6b6;
+    --color-lightBlue:#5254BE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 26px;
+    margin: auto;
+}
+h2{
+    font-size: 24px;
+    margin: auto;
+}
+p{
+    font-size: 18px;
+    margin: auto;
+}
+/*MENU BUTTON*/
+.navLock{
+    display: flex;
+    justify-content: right;
+    z-index: 1;
+    margin-bottom:2%;
+    top: 80px;
+    right: 65px;
+}
+.navButton{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px 0 0 10px ;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border: 3px solid var(--color-lightBlue);
+    background-color: var(--color-lightBlue);
+}
+.navButton h5{
+    color: var(--color-white);
+    position: absolute;
+    top: 2px;
+}
+.hamburguerMenu{
+    position: absolute;
+    top: 40px;
+    width: 50px;
+    height: 6px;
+    background:var(--color-white);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.hamburguerMenu::before,
+.hamburguerMenu::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background:var(--color-white);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.hamburguerMenu::before{
+    transform: translateY(-16px);
+}
+.hamburguerMenu::after{
+    transform: translateY(16px);
+}
+/*ANIMATION*/
+.navButton.open .hamburguerMenu {
+    transform: translateX(-50px);
+    background: transparent;
+}
+.navButton.open .hamburguerMenu::before{
+    transform: rotate(45deg) translate(35px,-35px);
+}
+.navButton.open .hamburguerMenu::after{
+    transform: rotate(-45deg) translate(35px,35px);
+}
+.navButtonClick{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    width: 150px;
+    height: 100%;
+    border-radius:0 0 0 25px ;
+    background-color: var(--color-lightBlue);
+}
+.navButtonClick button{
+    cursor: pointer;
+    padding: 10%;
+    margin: 10%;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 25px;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+.navButtonClick button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+/*MENU BUTTON*/

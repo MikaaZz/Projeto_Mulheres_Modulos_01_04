@@ -1,0 +1,204 @@
+:root{
+    --color-yellow:#FFCE05;
+    --color-blue:#303192;
+    --color-white:#fff;
+    --color-font:#363636;
+    --color-shadow:#b6b6b6;
+    --color-lightBlue:#5254BE;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 26px;
+    margin: auto;
+    color: var(--color-white);
+}
+h2{
+    font-size: 24px;
+    margin: auto;
+    color: var(--color-blue);
+}
+p{
+    font-size: 18px;
+    margin: auto;
+    color: var(--color-font);
+    padding: 1rem 0 0 0;
+}
+
+/*MENU BUTTON*/
+.navLock{
+    display: flex;
+    justify-content: right;
+    z-index: 1;
+    margin-bottom:2%;
+    top: 80px;
+    right: 65px;
+}
+.navButton{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px 0 0 10px ;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border: 3px solid var(--color-lightBlue);
+    background-color: var(--color-lightBlue);
+}
+.navButton h5{
+    color: var(--color-white);
+    position: absolute;
+    top: 2px;
+}
+.hamburguerMenu{
+    position: absolute;
+    top: 40px;
+    width: 50px;
+    height: 6px;
+    background:var(--color-white);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.hamburguerMenu::before,
+.hamburguerMenu::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background:var(--color-white);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.hamburguerMenu::before{
+    transform: translateY(-16px);
+}
+.hamburguerMenu::after{
+    transform: translateY(16px);
+}
+/*ANIMATION*/
+.navButton.open .hamburguerMenu {
+    transform: translateX(-50px);
+    background: transparent;
+}
+.navButton.open .hamburguerMenu::before{
+    transform: rotate(45deg) translate(35px,-35px);
+}
+.navButton.open .hamburguerMenu::after{
+    transform: rotate(-45deg) translate(35px,35px);
+}
+.navButtonClick{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    width: 150px;
+    height: 100%;
+    border-radius:0 0 0 25px ;
+    background-color: var(--color-lightBlue);
+}
+.navButtonClick button{
+    cursor: pointer;
+    padding: 10%;
+    margin: 10%;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 25px;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+.navButtonClick button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+/*MENU BUTTON*/
+.divGeral{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/*Bloco 01*/
+.titleAndDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgAndTextHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerTitle{
+    background-color: var(--color-yellow);
+    border-radius: 0 0 25px 25px ;
+    margin: 0 2% 2% 2%;
+    text-align: center;
+    min-width: 300;
+    padding: 2%;
+}
+.headerImage{
+    max-width: 350px;
+    max-height: 350px;
+    margin-top: 2%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.description p{
+    text-align: left;
+}
+/*Bloco 01*/
+/*Bloco 03*/
+.bloco03{
+    text-align: center;
+}
+.buttonAvaliaçãoInicial{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.buttonAvaliaçãoInicial:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+/*Bloco 03*/
+/*Bloco 04*/
+.bloco04{
+    text-align: center;
+}
+.bloco04 img{
+    max-width: 350px;
+    max-height: 350px;
+}
+.imgText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textBloco04{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: justify;
+    margin-left: 2%;
+}
