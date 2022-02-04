@@ -272,6 +272,7 @@ li{
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
 }
 .blocoAmareloArredondado{
     display: flex;
@@ -281,6 +282,20 @@ li{
     text-align: center;
     height: 50px;
     padding: 2%;
+}
+.blocoSetor{
+    background-color: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+    padding: 2%;
+    border-radius: 1rem;
+    width: 50%;
+}
+.blocoSetor p{
+    color: var(--color-white);
 }
 .blocoForo{
     display: flex;
@@ -555,5 +570,9 @@ footer{
     }
     .divH5P{
         max-width: 500px;
+    }
+    .blocoSetor img{
+        width: 120px;
+        height: 120px;
     }
 }
