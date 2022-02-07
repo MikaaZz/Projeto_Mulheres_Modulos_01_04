@@ -1,0 +1,578 @@
+:root{
+    --color-yellow:#FFCE05;
+    --color-blue:#303192;
+    --color-white:#fff;
+    --color-font:#363636;
+    --color-shadow:#b6b6b6;
+    --color-lightBlue:#5254BE;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 26px;
+    margin: auto;
+    color: var(--color-white);
+}
+h2{
+    font-size: 24px;
+    margin: auto;
+    color: var(--color-blue);
+}
+p{
+    font-size: 18px;
+    margin: auto;
+    color: var(--color-font);
+    padding: 1rem 0 0 0;
+}
+li{
+    font-size: 18px;
+    margin: auto;
+    color: var(--color-font);
+    padding: 1rem 0 0 0;
+}
+/*MENU BUTTON*/
+.navLock{
+    display: flex;
+    justify-content: right;
+    z-index: 1;
+    margin-bottom:2%;
+    top: 80px;
+    right: 65px;
+}
+.navButton{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px 0 0 10px ;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border: 3px solid var(--color-lightBlue);
+    background-color: var(--color-lightBlue);
+}
+.navButton h5{
+    color: var(--color-white);
+    position: absolute;
+    top: 2px;
+}
+.hamburguerMenu{
+    position: absolute;
+    top: 40px;
+    width: 50px;
+    height: 6px;
+    background:var(--color-white);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.hamburguerMenu::before,
+.hamburguerMenu::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background:var(--color-white);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.hamburguerMenu::before{
+    transform: translateY(-16px);
+}
+.hamburguerMenu::after{
+    transform: translateY(16px);
+}
+/*ANIMATION*/
+.navButton.open .hamburguerMenu {
+    transform: translateX(-50px);
+    background: transparent;
+}
+.navButton.open .hamburguerMenu::before{
+    transform: rotate(45deg) translate(35px,-35px);
+}
+.navButton.open .hamburguerMenu::after{
+    transform: rotate(-45deg) translate(35px,35px);
+}
+.navButtonClick{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    width: 150px;
+    height: 100%;
+    border-radius:0 0 0 25px ;
+    background-color: var(--color-lightBlue);
+}
+.navButtonClick button{
+    cursor: pointer;
+    padding: 10%;
+    margin: 10%;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 25px;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+.navButtonClick button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+/*MENU BUTTON*/
+.divGeral{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/*Bloco 01*/
+.titleAndDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgAndTextHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerTitle{
+    background-color: var(--color-yellow);
+    border-radius: 0 0 25px 25px ;
+    margin: 0 2% 2% 2%;
+    text-align: center;
+    min-width: 300;
+    padding: 2%;
+}
+.headerImage{
+    max-width: 350px;
+    max-height: 350px;
+    margin-top: 2%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.description p{
+    text-align: left;
+}
+/*Bloco 01*/
+/*Bloco 03*/
+.bloco03{
+    text-align: center;
+}
+.buttonAvaliaçãoInicial{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.buttonAvaliaçãoInicial:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+/*Bloco 03*/
+/*Bloco 04*/
+.bloco04{
+    text-align: center;
+}
+.bloco04 img{
+    max-width: 350px;
+    max-height: 350px;
+}
+.imgText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textBloco04{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: justify;
+    margin-left: 2%;
+}
+.ebook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0px;
+}
+.ebook p{
+    padding: 2% 0px;
+}
+.blocoAmarelo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-yellow);
+    padding: 2% 0px;
+}
+.blocoAmarelo button{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}.blocoAmarelo button:hover{
+    background-color: var(--color-white);
+    color: var(--color-blue);
+}
+.blocoH5P{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tituloH5P{
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 2%;
+    border-radius: 15px;
+}
+.tituloH5P p{
+    color: var(--color-white);
+    padding-bottom: 2%;
+}
+.divH5P{
+    max-width: 750px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+}
+/*Bloco 04*/
+/*Bloco 05*/
+.bloco05{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.blocoAmareloArredondado{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-yellow);
+    border-radius: 0 0 0 25px ;
+    text-align: center;
+    height: 50px;
+    padding: 2%;
+}
+.blocoSetor{
+    background-color: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+    padding: 2%;
+    border-radius: 1rem;
+    width: 50%;
+}
+.blocoSetor p{
+    color: var(--color-white);
+}
+.blocoForo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.blocoAzulForo{
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 15px;
+}
+.blocoAzulForo button{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-yellow);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-blue);
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.blocoAzulForo button:hover{
+    background-color: var(--color-white);
+    color: var(--color-blue);
+}
+/*Bloco 05*/
+/*Bloco 06*/
+.bloco06{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.blocoAmareloFino{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-yellow);
+    padding: 0.4rem 0px;
+    margin: 2% 0px;
+}
+.podcast{
+    max-width: 700px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 2%;
+    height: 50px;
+}
+/*Bloco 06*/
+/*Bloco 07*/
+.bloco07{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blocoAmareloAtividades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-yellow);
+    padding: 2% 0px;
+}
+.fijación{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fijación button{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    margin: 2% 0;
+}
+.fijación button:hover{
+    background-color: var(--color-white);
+    color: var(--color-blue);
+}
+/*Bloco 07*/
+/*Bloco 08*/
+.bloco08{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.botaoActividade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.botaoActividade button{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    margin: 2% 0;
+}
+.botaoActividade button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+/*Bloco 08*/
+/*Bloco 09*/
+.bloco09{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.containerAmarelo{
+    background-color: var(--color-yellow);
+    width: 5em;
+    height: 0.3rem;
+    border-radius: 25px;
+}
+.avaliacaoFinal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.textoBotao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+.textoBotao button{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    margin: 2% 0;
+}
+.textoBotao button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+/*Bloco 09*/
+/*Bloco 10*/
+.bloco10{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imagemBotao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagemBotao button{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    margin: 2% 0;
+}
+.imagemBotao button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+/*Bloco 10*/
+/*Footer*/
+footer{
+    text-align: center;
+}
+.navBotao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navBotao button{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    margin: 2% 0;  
+}
+.navBotao button:hover{
+    background-color: var(--color-yellow);
+    color: var(--color-blue);
+}
+/*Footer*/
+@media screen and (max-width:1100px){
+    .description{
+        padding: 2%;
+        width: 100%;
+        
+    }
+    .description p{
+        text-align: center;
+    }
+    .imgText{
+        flex-direction: column;
+    }
+    .textBloco04{
+        width: 100%;
+        padding: 2%;
+        margin: 0px;
+        text-align: center;
+    }
+    .titleAndDescription{
+        flex-direction: column;
+    }
+    .blocoAmareloArredondado{
+        height: 120px;
+    }
+    .blocoAmareloAtividades{
+        flex-direction: column;
+        text-align: center;
+    }
+    .avaliacaoFinal{
+        flex-direction: column;
+    }
+    .textoBotao{
+        width: 100%;
+        padding: 2%;
+    }
+    .imagemBotao{
+        flex-direction: column-reverse;
+    }
+    .navBotao{
+        flex-direction: column;
+    }
+    .divH5P{
+        max-width: 500px;
+    }
+    .blocoSetor img{
+        width: 120px;
+        height: 120px;
+    }
+}
