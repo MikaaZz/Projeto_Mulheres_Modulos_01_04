@@ -133,8 +133,8 @@ p{
 }
 .navButtonClick button{
     cursor: pointer;
-    padding: 10%;
-    margin: 10%;
+    padding: 8%;
+    margin: 5%;
     background-color: var(--color-blue);
     border: none;
     border-radius: 25px;
@@ -185,7 +185,6 @@ p{
 }
 .section02 iframe{
     border-radius: 15px;
-    margin: 5%;
 }
 .section03{
     display: flex;
@@ -314,6 +313,25 @@ table{
     color:var(--color-font);
     padding: 0% 5% 5% 5%;
     text-align: center;
+}
+.alicia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-blue);
+    width: 80%;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 8% auto 5% auto ;
+}
+.alicia h2{
+    color: var(--color-white);
+    text-align: center;
+}
+.alicia p {
+    color: var(--color-white);
+    text-align: justify;
 }
 .characters{
     display: flex;
@@ -506,17 +524,17 @@ footer li{
     align-content: center;
     align-items: center;
     justify-content: center;
+    padding: 2%;
     margin: auto;
 }
 .video iframe{
     border-radius: 1rem;
-    width: 100%;
-    height: 430px;
+    height: 394px;
+}
+.h5p iframe {
+    height: 360px;
 }
 @media screen and (min-width: 451px) {
-    body{
-        max-width: 600px;
-    }
     h1{
         font-size: 30px;
     }
@@ -535,9 +553,6 @@ footer li{
     
 }
 @media screen and (min-width: 601px){
-    body{
-        min-width: 900px;
-    }
     h1{
         font-size: 32px;
     }
@@ -570,10 +585,6 @@ footer li{
     }
     .section02 p{
         font-size: 22px;
-    }
-    .section02 iframe{
-        width: 550px;
-        height: 350px;
     }
     .section02 img {
         width: 100%;
@@ -622,11 +633,9 @@ footer li{
         height: 65px;
         font-size: 18px;
     }
+    
 }
 @media screen and (min-width: 901px) {
-    body{
-        max-width: 1920px;
-    }
     .imgAndTextHeader{
         flex-direction: row;
         align-items: center;
@@ -684,6 +693,15 @@ footer li{
     }
     .section04 h2{
         padding-top: 1%;
+    }
+    .alicia{
+        width: 50%;
+        margin: 2% auto 5% auto;
+        height: 450px;
+        padding-bottom: 8%;
+    }
+    .alicia p{
+        text-align: center;
     }
     .characters{
         width: 50%;
@@ -758,30 +776,56 @@ footer li{
     .finalDiv{
         width: 60%;
     }
+    
 }
-@media screen and (min-width: 700px) {
+@media screen and (max-width:1100px){
     .video iframe{
-        height: 340px;
+        height: 205px;
+        width: 100%;
+    }
+    .h5p iframe {
+        height:320px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .video iframe{
+        height: 205px;
+    }
+    .h5p iframe {
+        height: 260px;
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 500px) {
     .video iframe{
-        height: 280px;
+        height: 205px;
+    }
+    .h5p iframe {
+        height: 180px;
     }
 }
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
     .video iframe{
-        height: 170px;
+        height: 165px;
+    }
+    .h5p iframe{
+        height: 140px;
     }
 }
-@media screen and (min-width: 350px) {
+@media screen and (max-width: 350px) {
     .video iframe{
-        height: 150px;
+        height: 130px;
+    }
+    .h5p iframe {
+        height: 110px;
     }
 }
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 300px) {
     .video iframe{
-        height: 120px;
+        height: 110px;
+    }
+    .h5p iframe {
+        height: 80px;
     }
 }
