@@ -16,23 +16,27 @@ h1{
     font-size: 26px;
     margin: auto;
     color: var(--color-white);
+    text-align: justify;
 }
 h2{
     font-size: 24px;
     margin: auto;
     color: var(--color-blue);
+    text-align: justify;
 }
 p{
     font-size: 18px;
     margin: auto;
     color: var(--color-font);
     padding: 1rem 0 0 0;
+    text-align: justify;
 }
 li{
     font-size: 18px;
     margin: auto;
     color: var(--color-font);
     padding: 1rem 0 0 0;
+    text-align: justify;
 }
 /*MENU BUTTON*/
 .navLock{
@@ -148,7 +152,7 @@ li{
     background-color: var(--color-yellow);
     border-radius: 0 0 25px 25px ;
     margin: 0 2% 2% 2%;
-    text-align: center;
+    
     min-width: 300;
     padding: 2%;
 }
@@ -168,7 +172,7 @@ li{
 /*Bloco 01*/
 /*Bloco 03*/
 .bloco03{
-    text-align: center;
+    
 }
 .buttonAvaliaçãoInicial{
     width: 220px;
@@ -189,7 +193,7 @@ li{
 /*Bloco 03*/
 /*Bloco 04*/
 .bloco04{
-    text-align: center;
+    
 }
 .bloco04 img{
     max-width: 350px;
@@ -255,7 +259,7 @@ li{
 .tituloH5P p{
     color: var(--color-white);
     padding-bottom: 2%;
-}
+} 
 .divH5P{
     max-width: 750px;
     display: flex;
@@ -264,14 +268,14 @@ li{
     justify-content: center;
     margin: auto;
     flex-direction: column;
-    text-align: center;
+    
 }
 /*Bloco 04*/
 /*Bloco 05*/
 .bloco05{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    
     justify-content: center;
 }
 .blocoAmareloArredondado{
@@ -279,7 +283,7 @@ li{
     justify-content: center;
     background-color: var(--color-yellow);
     border-radius: 0 0 0 25px ;
-    text-align: center;
+    
     height: 70px;
 }
 .blocoSetor{
@@ -332,7 +336,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    
 }
 .blocoAmareloFino{
     display: flex;
@@ -402,7 +406,7 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    
 }
 .botaoActividade{
     display: flex;
@@ -434,7 +438,7 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    
 }
 .containerAmarelo{
     background-color: var(--color-yellow);
@@ -479,7 +483,7 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    
 }
 .imagemBotao{
     display: flex;
@@ -507,7 +511,7 @@ li{
 /*Bloco 10*/
 /*Footer*/
 footer{
-    text-align: center;
+    
 }
 .navBotao{
     display: flex;
@@ -539,7 +543,7 @@ footer{
         
     }
     .description p{
-        text-align: center;
+        
     }
     .imgText{
         flex-direction: column;
@@ -548,7 +552,7 @@ footer{
         width: 100%;
         padding: 2%;
         margin: 0px;
-        text-align: center;
+        
     }
     .titleAndDescription{
         flex-direction: column;
@@ -558,7 +562,7 @@ footer{
     }
     .blocoAmareloAtividades{
         flex-direction: column;
-        text-align: center;
+        
     }
     .avaliacaoFinal{
         flex-direction: column;
