@@ -323,8 +323,7 @@ table{
     background-color: var(--color-blue);
     width: 80%;
     border-radius: 15px;
-    padding: 2%;
-    margin: 8% auto 5% auto ;
+    padding: 5%;
 }
 .alicia h2{
     color: var(--color-white);
@@ -341,12 +340,10 @@ table{
     background-color: var(--color-blue);
     width: 80%;
     border-radius: 15px;
-    padding: 2%;
-    margin: 5%;
+    padding: 5%;
 }
 .characters h2 {
     color: var(--color-white);
-    
 }
 .characters p {
     color: var(--color-white);

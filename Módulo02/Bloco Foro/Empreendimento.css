@@ -1,0 +1,59 @@
+/*Bloco 05*/
+.bloco05{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blocoAmareloArredondado{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-yellow);
+    border-radius: 0 0 0 25px ;
+    
+    height: 70px;
+}
+.blocoSetor{
+    background-color: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem auto;
+    padding: 2%;
+    border-radius: 1rem;
+    width: 50%;
+}
+.blocoSetor p{
+    color: var(--color-white);
+}
+.blocoForo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.blocoAzulForo{
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 15px;
+}
+.blocoAzulForo button{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-yellow);
+    border: none;
+    border-radius: 50px;
+    color: var(--color-blue);
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.blocoAzulForo button:hover{
+    background-color: var(--color-white);
+    color: var(--color-blue);
+}
+/*Bloco 05*/

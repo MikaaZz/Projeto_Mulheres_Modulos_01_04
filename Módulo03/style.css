@@ -17,21 +17,15 @@ h1{
     margin: auto;
     color: var(--color-white);
     text-align: justify;
+    font-weight: bold;
 }
 h2{
     font-size: 24px;
     margin: auto;
     color: var(--color-blue);
-    text-align: justify;
+    text-align: center;
 }
 p{
-    font-size: 18px;
-    margin: auto;
-    color: var(--color-font);
-    padding: 1rem 0 0 0;
-    text-align: justify;
-}
-li{
     font-size: 18px;
     margin: auto;
     color: var(--color-font);
@@ -152,9 +146,8 @@ li{
     background-color: var(--color-yellow);
     border-radius: 0 0 25px 25px ;
     margin: 0 2% 2% 2%;
-    
     min-width: 300;
-    padding: 2%;
+    padding: 5%;
 }
 .headerImage{
     max-width: 350px;
@@ -167,12 +160,14 @@ li{
     width: 50%;
 }
 .description p{
-    text-align: left;
+    text-align: justify;
 }
 /*Bloco 01*/
 /*Bloco 03*/
 .bloco03{
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .buttonAvaliaçãoInicial{
     width: 220px;
@@ -192,9 +187,6 @@ li{
 }
 /*Bloco 03*/
 /*Bloco 04*/
-.bloco04{
-    
-}
 .bloco04 img{
     max-width: 350px;
     max-height: 350px;
@@ -222,7 +214,9 @@ li{
 }
 .blocoAmarelo{
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     background-color: var(--color-yellow);
     padding: 2% 0px;
@@ -259,7 +253,7 @@ li{
 .tituloH5P p{
     color: var(--color-white);
     padding-bottom: 2%;
-} 
+}
 .divH5P{
     max-width: 750px;
     display: flex;
@@ -406,7 +400,16 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-items: center;
+}
+.blocoAmareloAtvidadePratica{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-yellow);
+    border-radius: 25px;
+    padding: 2% 0px;
+    width: 90%;
 }
 .botaoActividade{
     display: flex;
@@ -428,10 +431,30 @@ li{
     margin: 2% 0;
 }
 .botaoActividade button:hover{
-    background-color: var(--color-yellow);
+    background-color: var(--color-white);
     color: var(--color-blue);
 }
 /*Bloco 08*/
+/*Entrevista*/
+.entrevista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+}
+.entrevista p{
+    width: 80%;
+}
+.videoEntrevista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.videoEntrevista iframe{
+    border-radius: 25px;
+}
+/*Entrevista*/
 /*Bloco 09*/
 .bloco09{
     display: flex;
@@ -510,9 +533,6 @@ li{
 }
 /*Bloco 10*/
 /*Footer*/
-footer{
-    
-}
 .navBotao{
     display: flex;
     justify-content: space-around;
@@ -540,10 +560,6 @@ footer{
     .description{
         padding: 2%;
         width: 100%;
-        
-    }
-    .description p{
-        
     }
     .imgText{
         flex-direction: column;
